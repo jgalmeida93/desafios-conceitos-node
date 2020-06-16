@@ -5,10 +5,13 @@
   "license": "MIT",
   "scripts": {
     "dev": "nodemon",
-    "test": "jest"
+    "test": "jest",
+    "commit": "git cz"
   },
   "dependencies": {
+    "commitizen": "^4.1.2",
     "cors": "^2.8.5",
+    "cz-emoji": "^1.2.1",
     "express": "^4.17.1",
     "uuidv4": "^6.0.7"
   },
@@ -16,5 +19,10 @@
     "jest": "^25.2.6",
     "nodemon": "^2.0.2",
     "supertest": "^4.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-emoji"
+    }
   }
 }
